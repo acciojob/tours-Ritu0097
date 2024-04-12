@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Tours from './Tours';
-import './App.css'; 
+import './App.css'; // Assuming you have some CSS file for styling
+
 function App() {
   const [tours, setTours] = useState([
     {
@@ -46,7 +47,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" id='main'>
       <Tours tours={tours} onDeleteTour={handleDeleteTour} />
     </div>
   );
