@@ -22,7 +22,7 @@ const Tour = ({ tour, onDelete }) => {
           {showMore ? 'Show less' : 'Read more'}
         </button>
       </p>
-      <button onClick={() => onDelete(id)} className="delete-btn">
+      <button onClick={() => onDelete(id)} id={`delete-btn-${id}`} className="delete-btn">
         Not interested
       </button>
     </article>
